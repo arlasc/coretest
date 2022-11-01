@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mainboard %>
+
+<div>
+  <%= link_to "Edit this mainboard", edit_mainboard_path(@mainboard) %> |
+  <%= link_to "Back to mainboards", mainboards_path %>
+
+  <%= button_to "Destroy this mainboard", @mainboard, method: :delete %>
+</div>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @videoboard %>
+
+<div>
+  <%= link_to "Edit this videoboard", edit_videoboard_path(@videoboard) %> |
+  <%= link_to "Back to videoboards", videoboards_path %>
+
+  <%= button_to "Destroy this videoboard", @videoboard, method: :delete %>
+</div>

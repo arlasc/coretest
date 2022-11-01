@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  processors_suported: MyString
+  qtd_slots_ram: 1
+  max_memory_ram: 1
+  video_board: false
+
+two:
+  product_name: MyString
+  processors_suported: MyString
+  qtd_slots_ram: 1
+  max_memory_ram: 1
+  video_board: false

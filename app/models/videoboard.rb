@@ -1,0 +1,2 @@
+class Videoboard < ApplicationRecord
+end
