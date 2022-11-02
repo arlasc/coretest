@@ -1,0 +1,47 @@
+<%= form_with(model: order) do |form| %>
+  <% if order.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+        <% order.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name_order, style: "display: block" %>
+    <%= form.text_field :name_order %>
+  </div>
+
+  <div>
+    <%= form.label :author_id, style: "display: block" %>
+    <%= form.text_field :author_id %>
+  </div>
+
+  <div>
+    <%= form.label :processor_id, style: "display: block" %>
+    <%= form.text_field :processor_id %>
+  </div>
+
+  <div>
+    <%= form.label :mainboard_id, style: "display: block" %>
+    <%= form.text_field :mainboard_id %>
+  </div>
+
+  <div>
+    <%= form.label :memoryram_id, style: "display: block" %>
+    <%= form.text_field :memoryram_id %>
+  </div>
+
+  <div>
+    <%= form.label :videoboard_id, style: "display: block" %>
+    <%= form.text_field :videoboard_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

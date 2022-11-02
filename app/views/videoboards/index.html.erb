@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Videoboards</h1>
+
+<div id="videoboards">
+  <% @videoboards.each do |videoboard| %>
+    <%= render videoboard %>
+    <p>
+      <%= link_to "Show this videoboard", videoboard %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New videoboard", new_videoboard_path %>

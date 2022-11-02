@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mainboards</h1>
+
+<div id="mainboards">
+  <% @mainboards.each do |mainboard| %>
+    <%= render mainboard %>
+    <p>
+      <%= link_to "Show this mainboard", mainboard %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mainboard", new_mainboard_path %>

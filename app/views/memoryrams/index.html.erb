@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Memoryrams</h1>
+
+<div id="memoryrams">
+  <% @memoryrams.each do |memoryram| %>
+    <%= render memoryram %>
+    <p>
+      <%= link_to "Show this memoryram", memoryram %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New memoryram", new_memoryram_path %>

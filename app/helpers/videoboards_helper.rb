@@ -1,0 +1,2 @@
+module VideoboardsHelper
+end

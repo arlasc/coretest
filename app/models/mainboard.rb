@@ -1,0 +1,2 @@
+class Mainboard < ApplicationRecord
+end

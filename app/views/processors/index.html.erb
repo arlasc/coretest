@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Processors</h1>
+
+<div id="processors">
+  <% @processors.each do |processor| %>
+    <%= render processor %>
+    <p>
+      <%= link_to "Show this processor", processor %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New processor", new_processor_path %>

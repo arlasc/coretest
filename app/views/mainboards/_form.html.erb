@@ -1,0 +1,42 @@
+<%= form_with(model: mainboard) do |form| %>
+  <% if mainboard.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(mainboard.errors.count, "error") %> prohibited this mainboard from being saved:</h2>
+
+      <ul>
+        <% mainboard.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :product_name, style: "display: block" %>
+    <%= form.text_field :product_name %>
+  </div>
+
+  <div>
+    <%= form.label :processors_suported, style: "display: block" %>
+    <%= form.text_field :processors_suported %>
+  </div>
+
+  <div>
+    <%= form.label :qtd_slots_ram, style: "display: block" %>
+    <%= form.number_field :qtd_slots_ram %>
+  </div>
+
+  <div>
+    <%= form.label :max_memory_ram, style: "display: block" %>
+    <%= form.number_field :max_memory_ram %>
+  </div>
+
+  <div>
+    <%= form.label :video_board, style: "display: block" %>
+    <%= form.check_box :video_board %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

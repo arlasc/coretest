@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_order: MyString
+  author: one
+  processor: one
+  mainboard: one
+  memoryram: one
+  videoboard: one
+
+two:
+  name_order: MyString
+  author: two
+  processor: two
+  mainboard: two
+  memoryram: two
+  videoboard: two
