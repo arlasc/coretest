@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+.container{
+    position: relative;
+    width: 100%;
+    margin-left: 25%;
+}
+
+.menu{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-left: -1%;
+    margin-top: -1%;
+    background-color: powderblue;
+}
+
+
+.list-menu{
+    list-style-type: none; /* no bullets */
+}
+
+.menu-btn{
+    position: relative;
+    width: 8%;
+    height: 4%;
+    background-color: powderblue;
+    padding: 0.06in;
+}
+
+.api{
+    position: absolute;
+    float: right;
+    margin-left: 102%;
+    width: 160%;
+    height: 50%;
+}
